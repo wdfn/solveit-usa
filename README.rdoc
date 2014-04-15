@@ -2,4 +2,4 @@
 
 Gems we're using:
 Devise - https://github.com/plataformatec/devise, tutorial - http://guides.railsgirls.com/devise/
-Forem - https://github.com/radar/forem
+F orem - https://github.com/radar/forem
