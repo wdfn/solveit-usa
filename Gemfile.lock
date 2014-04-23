@@ -164,6 +164,7 @@ DEPENDENCIES
   forem!
   jbuilder (~> 1.2)
   jquery-rails
+  json
   kaminari (= 0.15.1)
   pg
   rails (= 4.0.4)
