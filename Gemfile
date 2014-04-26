@@ -44,6 +44,8 @@ gem 'kaminari', '0.15.1'
 
 gem 'rails_admin'
 
+gem 'forem-bootstrap', :github => "radar/forem-bootstrap"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
