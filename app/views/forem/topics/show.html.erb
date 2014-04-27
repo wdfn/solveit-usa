@@ -1,5 +1,6 @@
 <div id='topic' class='<%= 'un' unless @topic.locked? %>locked'>
   <%= render :partial => 'forem/topics/head', :locals => { :topic => @topic } %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
   <div id='menu'>
     <div class='btn-group'>
