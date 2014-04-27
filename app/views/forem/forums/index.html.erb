@@ -1,12 +1,20 @@
+<header>
+  <nav>
+    <% if user_signed_in? %>
+      <%= link_to current_user.email, main_app.edit_user_registration_path %>
+      | <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
+      <% if current_user.forem_admin %>
+          | <%= link_to "Administrate", forem.admin_root_url %>
+      <% end %>
+    <% else %>
+      <%= link_to "Sign up", main_app.new_user_registration_path %>
+      | <%= link_to "Sign in", main_app.new_user_session_path %>
+    <% end %>
+  </nav>
+</header>
+
 <div id='forums_container'>
   <h1 id='forums_title'><%= t('.title') %></h1>
 
   <%= render @categories %>
 </div>
-
-<br>
-<footer id='admin_link'>
-  <% if forem_admin? %>
-    <%= link_to t("area", :scope => "forem.admin"), forem.admin_root_path %>
-  <% end %>
-</footer>
