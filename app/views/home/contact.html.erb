@@ -1,1 +1,98 @@
-<h2>Contact</h2>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets.css" />
+ <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" rel="stylesheet" type="text/css">
+<script src="assets/jquery-1.9.1.js"></script>
+<script src="assets/script.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<div class="Headers">
+		<ul id="menu">
+			<li id='logo'>SolveItUsa</li>
+			<!-- need to add the links, change accordingly to match name of your file -->
+			<li class='header_item'><a href='index.html'/><div id ='home'>Home</div></a></li>
+			<li class='header_item'><!--<a href='about.html'/> --><div id ='about'>About</div><!-- </a> --></li>
+			<li class='header_item'><a href='contact.html'/><div id ='contact'>Contact</div></a></li>
+		<div id ='menuright'>
+			<li class ="right_item"><div id='signup'>Signup</div></li>
+
+			<div id="modal-container_signup">
+				<div id="modal-overlay_signup"></div>
+				<div id="modal-box-wrapper">
+					<div id="modal-box">
+						<div id="modal-header">
+							Signup
+						</div>
+							<div id="modal-content">
+							<input type="text" id="inputbox" placeholder="Enter new username" />
+							<input type="password" id="inputbox" placeholder="Enter new password" />
+							<input type="password" id="inputbox" placeholder="Re-Enter new password" />
+						</div>
+							<div class="button">
+								Submit
+							</div>
+							<div class="button">
+								Cancel
+							</div>
+					</div>
+				</div>
+			</div>
+			
+			<li class ="right_item"><div id='login'>Login</div></li>
+
+			<div id="modal-container_login">
+				<div id="modal-overlay_login"></div>
+				<div id="modal-box-wrapper">
+					<div id="modal-box">
+						<div id="modal-header">
+							Login
+						</div>
+							<div id="modal-content">
+							<input type="text" id="inputbox" placeholder="Enter username" />
+							<input type="password" id="inputbox" placeholder="Enter password" />
+						</div>
+							<div class="button">
+								Submit
+							</div>
+							<div class="button">
+								Cancel
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</ul>
+	</div>
+	<!-- end of header -->
+
+
+	<div class="contact_container">Contact</div>
+
+		<div class='form'>
+			<div class="form_container">
+				<div class="contact_content">Name (optional)</div>
+					<div id="wrapper">
+					    <input class='input1' type="text" id="contact_field" name="name"  />     
+					</div>
+
+				<div class="contact_content">Email (optional)</div>
+					<div id="wrapper">
+					    <input class='input1' type="text" id="contact_field" name="email" />     
+					</div>
+
+				<div class="contact_content">Questions or Feedback</div>
+					<div id="wrapper">
+					    <input class='input' type="text" id="contact_field" name="feedback" height='500' />  
+					</div>
+
+				<div id="submit-button">Submit</div>
+	 		</div>
+	 	</div>
+
+	<!-- footer -->
+	<div id="Footer">
+		<h7><div id='copyright'>copyright &#169; Solve It USA</div></h7>
+	</div>
+
+</body>
