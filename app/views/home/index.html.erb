@@ -1,11 +1,120 @@
 <head>
-	<title>SolveIt USA</title>
+<title>Solve It USA</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/main_page.css" />
+<script src="assets/jquery-1.9.1.js"></script>
+<script src="assets/script.js"></script>
 </head>
-
 <body>
-	<h3>Welcome to SolveIt USA!</h3>
-	<p>Blah Blah Blah I'm talking blah blah</p>
-	<p>I just can't stop talking because text rocks</p>
+
+	<div class="Headers">
+		<ul id="menu">
+			<li id='logo'>SolveItUsa</li>
+			<!-- need to add the links, change accordingly to match name of your file -->
+			<li class='header_item'><a href='index.html'/><div id ='home'>Home</div></a></li>
+			<li class='header_item'><a href='about.html'/> <div id ='about'>About</div></a></li>
+			<li class='header_item'><a href='contact.html'/><div id ='contact'>Contact</div></a></li>
+		<div id ='menuright'>
+			<li class ="right_item"><div id='signup'>Signup</div></li>
+
+			<div id="modal-container_signup">
+				<div id="modal-overlay_signup"></div>
+				<div id="modal-box-wrapper">
+					<div id="modal-box">
+						<div id="modal-header">
+							Signup
+						</div>
+							<div id="modal-content">
+							<input type="text" id="inputbox" placeholder="Enter new username" />
+							<input type="password" id="inputbox" placeholder="Enter new password" />
+							<input type="password" id="inputbox" placeholder="Re-Enter new password" />
+						</div>
+							<div class="button">
+								Submit
+							</div>
+							<div class="button">
+								Cancel
+							</div>
+					</div>
+				</div>
+			</div>
+			
+			<li class ="right_item"><div id='login'>Login</div></li>
+
+			<div id="modal-container_login">
+				<div id="modal-overlay_login"></div>
+				<div id="modal-box-wrapper">
+					<div id="modal-box">
+						<div id="modal-header">
+							Login
+						</div>
+							<div id="modal-content">
+							<input type="text" id="inputbox" placeholder="Enter username" />
+							<input type="password" id="inputbox" placeholder="Enter password" />
+						</div>
+							<div class="button">
+								Submit
+							</div>
+							<div class="button">
+								Cancel
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</ul>
+	</div>
+
+<div id="banner-wrapper">
+	<div id="banner">
+		<img id="main-image" src="images/building.jpg">
+	</div>
+</div>
+<div id="main-text-wrapper">
+	<div id="main-text">
+	    <div id="title-text">Solve It USA</div>
+	</div>	
+</div>
+<div id="main-content-wrapper">
+	<div id="main-content">
+        <div class="info">
+			<div class="icon">
+		        <img class="icon-image" src="images/book.png">
+		    </div>
+		    <div class="underline"><div class="title">Learn</div></div>
+		    <div class="content">Violence is a huge problem across America, but the causes and solutions are a mystery. On the learn page, you can learn about violence so you have the information you need find solutions.</div>
+	    </div>	
+		<div class="info">
+			<div class="icon">
+		        <img class="icon-image" src="images/comments.png">
+		    </div>
+		    <div class="underline"><div class="title">Discuss</div></div>
+		    <div class="content">Friends and neighbors discuss problems like violence, but most people don not realize the best solutions come from conversations with some different than you. The bigger the difference, the better. On the forum, you can find people with different beliefs and backgrounds and discuss how to create a more peaceful community.</div>
+	    </div>
+		<div class="info">
+			<div class="icon">
+		        <img class="icon-image" src="images/light.png">
+		    </div>
+		    <div class="underline"><div class="title">Solve</div></div>
+		    <div class="content">We know you have a lot of ideas, so pick your best solution to violence in your community and turn your idea into an action plan.</div>
+	    </div>	
+		<div class="info">
+			<div class="icon">
+		        <img class="icon-image" src="images/people.png">
+		    </div>
+		    <div class="underline"><div class="title">Impact</div></div>
+		    <div class="content">Get started with your action plan or give your plan to legislators, public safety councils, or neighborhood councils. We guide you and help bring your action plan to life. </div>
+	    </div>
+	</div>	
+</div>	
+<div id="bottom-wrapper">
+	<div id="bottom-content">
+	    <div id="bottom-text">Learn more about what we do <a href="doc-link">here</a>.</div>
+	</div>	
+</div>	
+	<div id="Footer">
+		<h7><div id='copyright'>copyright &#169; Solve It USA</div></h7>
+	</div>
 </body>
 
 <p class="navbar-text pull-right">
