@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+    background-color: whitesmoke;
+}
+
+/*header and footer stuff*/
+ul {
+font-family: Arial, Verdana;
+font-size: 20px;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ul li {
+display: block;
+position: relative;
+float: left;
+}
+
+.header_item {
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+#menu {
+/*    position: fixed;*/
+    top:0;
+    background-color: rgba(47,47,47,0.98);
+    width: 100%;
+    height: 40px;
+}
+
+#menu a{
+    text-decoration: none;
+}
+#footer{
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47,47,47,0.98);
+}
+
+#copyright{
+    color:white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.right_item {
+    margin-top: 5px;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    float: right;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+#logo {
+    font-size: 35px;
+    color: #FF684F;
+    font-family: tahoma;
+}
+
+/*Modal*/
+#modal-container_login {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+#modal-container_signup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+
+#modal-overlay_login {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.5);
+}
+#modal-overlay_signup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-box-wrapper {
+    height: 270;
+    width: 500;
+    margin: auto;
+    z-index: 55;
+    position: relative;
+    top: 250;
+}
+#modal-header {
+    color: #FF684F;
+    font-size: 25;
+    font-weight: 100;
+    margin-left: 20;
+    margin-bottom: 20;
+    padding-top: 20;
+}
+#inputbox {
+    border: 1px solid black;
+    padding: 10px;
+    background: transparent;
+    margin: 0px;
+    margin-bottom: 15px;
+    width: 460px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    margin-left: 20;
+    }
+#modal-box {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 60;
+    width: 500;
+    height: 260;
+    background-color: whitesmoke;
+}
+.button {
+    display: inline-block;
+    background: #FF684F;
+    padding-top: 3;
+    padding-bottom: 3;
+    padding-left: 15;
+    padding-right: 15;
+    font-size: 12;
+    font-weight: 700;
+    color: white;
+    float: right;
+    margin-right: 20;
+    cursor: pointer;
+}
+/*end of header/footer stuff!*/
+
+#submit-button {
+    display: inline-block;
+    background: #FF684F;
+    color: white;
+    font-size: 15px;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+}
+
+.input {
+    width: 400px;
+    height: 185px;
+}
+.input1 {
+    width: 400px;
+}
+#header {
+    font-size: 50px;
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_container {
+    position: relative;
+    display: block;
+    margin: 25px auto 100px auto;
+    width: 350px;
+}
+#wrapper {
+    margin-bottom: 30px;
+}
+
+.contact_container {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.contact_content {
+    font-size: 16px;
+}
