@@ -16,7 +16,7 @@
       <% if @topics.empty? %>
         <tr><td colspan='5' align='center'><%= t('forem.topic.none') %></td></tr>
       <% end %>
-      <%= render @topics %>
+      <%= render @topics.sort_by { |topic| topic.views_count }.reverse %>
     </tbody>
   </table>
   <%= forem_pages_widget(@topics) %>
