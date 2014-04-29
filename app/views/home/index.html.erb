@@ -13,6 +13,7 @@
 			<!-- need to add the links, change accordingly to match name of your file -->
 			<li class='header_item'><a href='/'/><div id ='home'>Home</div></a></li>
 			<li class='header_item'><a href='/about'/> <div id ='about'>About</div></a></li>
+			<li class='header_item'><div id = 'forums'><%= link_to t('forem.forum.forums'), forem.forums_path %></div></li>
 			<li class='header_item'><a href='/contact'/><div id ='contact'>Contact</div></a></li>
 		<div id ='menuright'>
 			<li class ="right_item"><div id='signup'>Signup</div></li>
@@ -67,7 +68,7 @@
 
 <div id="banner-wrapper">
 	<div id="banner">
-		<img id="main-image" src="images/building.jpg">
+		<%= image_tag("building.jpg", id: "main-image") %>
 	</div>
 </div>
 <div id="main-text-wrapper">
@@ -79,28 +80,28 @@
 	<div id="main-content">
         <div class="info">
 			<div class="icon">
-		        <img class="icon-image" src="images/book.png">
+		        <%= image_tag("book.png", id: "icon-image") %>
 		    </div>
 		    <div class="underline"><div class="title">Learn</div></div>
 		    <div class="content">Violence is a huge problem across America, but the causes and solutions are a mystery. On the learn page, you can learn about violence so you have the information you need find solutions.</div>
 	    </div>	
 		<div class="info">
 			<div class="icon">
-		        <img class="icon-image" src="images/comments.png">
+		        <%= image_tag("comments.png", id: "icon-image") %>
 		    </div>
 		    <div class="underline"><div class="title">Discuss</div></div>
 		    <div class="content">Friends and neighbors discuss problems like violence, but most people don not realize the best solutions come from conversations with some different than you. The bigger the difference, the better. On the forum, you can find people with different beliefs and backgrounds and discuss how to create a more peaceful community.</div>
 	    </div>
 		<div class="info">
 			<div class="icon">
-		        <img class="icon-image" src="images/light.png">
+		        <%= image_tag("light.png", id: "icon-image") %>
 		    </div>
 		    <div class="underline"><div class="title">Solve</div></div>
 		    <div class="content">We know you have a lot of ideas, so pick your best solution to violence in your community and turn your idea into an action plan.</div>
 	    </div>	
 		<div class="info">
 			<div class="icon">
-		        <img class="icon-image" src="images/people.png">
+		        <%= image_tag("people.png", id: "icon-image") %>
 		    </div>
 		    <div class="underline"><div class="title">Impact</div></div>
 		    <div class="content">Get started with your action plan or give your plan to legislators, public safety councils, or neighborhood councils. We guide you and help bring your action plan to life. </div>
@@ -115,15 +116,13 @@
 	<div id="Footer">
 		<h7><div id='copyright'>copyright &#169; Solve It USA</div></h7>
 	</div>
+
 </body>
 
-<p class="navbar-text pull-right">
-<%= link_to t('forem.forum.forums'), forem.forums_path %>
-<p></p>
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>

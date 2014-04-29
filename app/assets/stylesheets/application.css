@@ -11,5 +11,4 @@
  *= require 'forem/base'
  *= require_self
  *= require_tree .
- *= require forem-bootstrap
  */

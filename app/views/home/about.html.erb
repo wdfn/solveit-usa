@@ -11,6 +11,7 @@
 			<li id='logo'>SolveItUsa</li>
 			<li class='header_item'><a href='/'/><div id ='home'>Home</div></a></li>
 			<li class='header_item'><a href='/about'/><div id ='about'>About</div></a></li>
+			<li class='header_item'><div id = 'forums'><%= link_to t('forem.forum.forums'), forem.forums_path %></div></li>
 			<li class='header_item'><a href='/contact'/><div id ='contact'>Contact</div></a></li>
 		<div id ='menuright'>
 			<li class ="right_item"><div id='signup'>Signup</div></li>
@@ -74,7 +75,7 @@
         <div id="dufourcontainer">
         <div id="dufourcontainer2">
             <div id="img1container">
-                <img id="img1" src="images/danieljdufour.jpg"/>
+                <%= image_tag("danieljdufour.jpg", id: "img1") %>
             </div>
             <div id="text1wrapper">
             <p style="color:white"><span id="font"><b>Daniel J. Dufour</b></span> is co-creator of Solve It USA. He has an M.A. in Conflict Resolution from Georgetown University and a B.A. in History from the University of California, Berkeley. He has served on political campaigns, managed refugee resettlement, supported conflict stabilization operations, consulted foreign diplomats and civil society, and co-authored a book chapter with Rachel Goldberg. He is one of the youngest people ever to receive a Mediator Credential from the prestigious National Conflict Resolution Center. Catholic Charities awarded him the star award for his exceptional training of co-workers and service to refugees. Joan B. Kroc Institute for Peace and Justice selected him for a distinguished panel. He is a member of Phi Alpha Theta. He speaks Spanish and is learning Arabic and Chinese.</p>
@@ -84,7 +85,7 @@
         <div id ="goldbergcontainer">
         <div id="goldbergcontainer2">
             <div id="img2container">
-                <img id="img2" length="300px" width="300px" src="images/rachelgoldberg.jpg"/>
+                <%= image_tag("rachelgoldberg.jpg", id: "img2", length: "300px", width: "300px") %>
             </div>
         <div id="text2wrapper">
             <p style="color:black"><span id="font"><b>Rachel Goldberg</b></span> is co-creator of Solve It USA. She has an M.A. in Conflict Resolution from Georgetown University and a B.A. in Political Science and Psychology with a minor in Disabilities Studies from the University of Delaware. Rachel specializes in intergroup relations, security, and integrated peacebuilding. She has field experience in Serbia, Croatia, Cambodia, Jordan, Israel and Palestine. She has in-depth knowledge of the Arab-Israeli conflict and received the Kathryn Davis Fellowship for Peace to study Hebrew. She lived in Israel for six months and studied the dynamics of the Arab-Israeli conflict, grassroots conflict resolution initiatives, Hebrew and Arabic. Rachel co-authored a chapter on security and peacebuilding in Integrated Peacebuilding: Innovative Approaches of Transforming Conflict. She also co-authored a chapter about the psychology of intergroup relations for the upcoming book The Psychology of Friendship and Enmity: Relationships in Love, Work, Politics, and War.

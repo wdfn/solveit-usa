@@ -1,18 +1,44 @@
 <header>
-  <nav>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <% if user_signed_in? %>
-      <%= link_to current_user.email, main_app.edit_user_registration_path %>
-      | <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
-      <% if current_user.forem_admin %>
-          | <%= link_to "Administrate", forem.admin_root_url %>
-      <% end %>
-    <% else %>
-      <%= link_to "Sign up", main_app.new_user_registration_path %>
-      | <%= link_to "Sign in", main_app.new_user_session_path %>
-    <% end %>
-  </nav>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 </header>
+
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">SolveItUSA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><%= link_to t('forem.forum.forums'), forem.forums_path %></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li><%= link_to current_user.email, main_app.edit_user_registration_path, class: "navbar-link" %></li>
+          <li><%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete, class: "navbar-link" %></li>
+          <% if current_user.forem_admin %>
+              <li><%= link_to "Administrate", forem.admin_root_url %></li>
+          <% end %>
+        <% else %>
+          <li><%= link_to "Sign up", main_app.new_user_registration_path %></li>
+          <li><%= link_to "Sign in", main_app.new_user_session_path %></li>
+        <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 <div id='forums_container'>
   <h1 id='forums_title'><%= t('.title') %></h1>

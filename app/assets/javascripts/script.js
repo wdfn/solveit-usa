@@ -18,6 +18,12 @@ $(document).ready(function(){
 		$("#contact").css('border-top', 'none');
 	});
 
+	$('#forums').hover(function(){
+		$('#forums').css('border-top', '3px solid #FF684F');
+	}, function(){
+		$("#forums").css('border-top', 'none');
+	});
+
 	$('#signup').hover(function(){
 		$('#signup').css('border-top', '3px solid #FF684F');
 	}, function(){
